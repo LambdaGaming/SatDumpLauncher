@@ -7,6 +7,7 @@ namespace SatDumpLauncher
 		{
 			ApplicationConfiguration.Initialize();
 			Application.Run( new MainForm() );
+			Properties.Settings.Default.Save();
 		}
 	}
 }
