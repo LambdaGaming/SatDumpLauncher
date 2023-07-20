@@ -38,7 +38,7 @@
 			// 
 			// LaunchButton
 			// 
-			LaunchButton.BackColor = Color.FromArgb(         68  ,         68  ,         68   );
+			LaunchButton.BackColor = Color.FromArgb( 68, 68, 68 );
 			LaunchButton.Dock = DockStyle.Bottom;
 			LaunchButton.FlatAppearance.BorderSize = 0;
 			LaunchButton.FlatStyle = FlatStyle.Flat;
@@ -103,7 +103,7 @@
 			// 
 			// PathButton
 			// 
-			PathButton.BackColor = Color.FromArgb(         68  ,         68  ,         68   );
+			PathButton.BackColor = Color.FromArgb( 68, 68, 68 );
 			PathButton.FlatAppearance.BorderSize = 0;
 			PathButton.FlatStyle = FlatStyle.Flat;
 			PathButton.ForeColor = Color.White;
@@ -119,7 +119,7 @@
 			// 
 			AutoScaleDimensions = new SizeF( 8F, 20F );
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = Color.FromArgb(         17  ,         17  ,         17   );
+			BackColor = Color.FromArgb( 17, 17, 17 );
 			ClientSize = new Size( 343, 182 );
 			Controls.Add( PathButton );
 			Controls.Add( UpdateCheck );
