@@ -46,7 +46,7 @@
 			LaunchButton.ForeColor = Color.White;
 			LaunchButton.Location = new Point( 0, 130 );
 			LaunchButton.Name = "LaunchButton";
-			LaunchButton.Size = new Size( 324, 52 );
+			LaunchButton.Size = new Size( 343, 52 );
 			LaunchButton.TabIndex = 0;
 			LaunchButton.Text = "LAUNCH";
 			LaunchButton.UseVisualStyleBackColor = false;
@@ -107,7 +107,7 @@
 			PathButton.FlatAppearance.BorderSize = 0;
 			PathButton.FlatStyle = FlatStyle.Flat;
 			PathButton.ForeColor = Color.White;
-			PathButton.Location = new Point( 185, 40 );
+			PathButton.Location = new Point( 204, 40 );
 			PathButton.Name = "PathButton";
 			PathButton.Size = new Size( 127, 29 );
 			PathButton.TabIndex = 5;
@@ -120,7 +120,7 @@
 			AutoScaleDimensions = new SizeF( 8F, 20F );
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.FromArgb(         17  ,         17  ,         17   );
-			ClientSize = new Size( 324, 182 );
+			ClientSize = new Size( 343, 182 );
 			Controls.Add( PathButton );
 			Controls.Add( UpdateCheck );
 			Controls.Add( CleanCheck );
