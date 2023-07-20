@@ -72,7 +72,7 @@ namespace SatDumpLauncher
 				try
 				{
 					StatLabel.Text = "Installing update...";
-					ZipFile.ExtractToDirectory( "SatDump.zip", Environment.CurrentDirectory );
+					ZipFile.ExtractToDirectory( "SatDump.zip", Environment.CurrentDirectory, true );
 				}
 				catch ( UnauthorizedAccessException )
 				{
