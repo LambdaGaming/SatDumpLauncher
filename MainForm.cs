@@ -92,7 +92,6 @@ namespace SatDumpLauncher
 			DirectoryInfo d = new( Environment.CurrentDirectory );
 			foreach ( FileInfo file in d.GetFiles() )
 			{
-				if ( file.Name == "SatDumpLauncher.exe" ) continue;
 				file.Delete();
 			}
 			foreach ( DirectoryInfo dir in d.GetDirectories() )
