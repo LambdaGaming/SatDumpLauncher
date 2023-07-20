@@ -54,8 +54,8 @@ namespace SatDumpLauncher
 					}
 					catch ( Exception e )
 					{
-						MessageBox.Show( "Something went wrong while downloading SatDump version info: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
-						Application.Exit();
+						var msg = MessageBox.Show( "Something went wrong while downloading SatDump version info: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
+						if ( msg == DialogResult.OK ) Application.Exit();
 					}
 				}
 
@@ -65,8 +65,8 @@ namespace SatDumpLauncher
 				}
 				catch ( Exception e )
 				{
-					MessageBox.Show( "Something went wrong while downloading the update: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
-					Application.Exit();
+					var msg = MessageBox.Show( "Something went wrong while downloading the update: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
+					if ( msg == DialogResult.OK ) Application.Exit();
 				}
 
 				try
@@ -76,13 +76,13 @@ namespace SatDumpLauncher
 				}
 				catch ( UnauthorizedAccessException )
 				{
-					MessageBox.Show( "Couldn't install the update. Try restarting the launcher with admin privileges.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
-					Application.Exit();
+					var msg = MessageBox.Show( "Couldn't install the update. Try restarting the launcher with admin privileges.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
+					if ( msg == DialogResult.OK ) Application.Exit();
 				}
 				catch ( Exception e )
 				{
-					MessageBox.Show( "Something went wrong while installing the update: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
-					Application.Exit();
+					var msg = MessageBox.Show( "Something went wrong while installing the update: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
+					if ( msg == DialogResult.OK ) Application.Exit();
 				}
 			}
 		}
