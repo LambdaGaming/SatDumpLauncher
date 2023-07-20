@@ -27,10 +27,9 @@ namespace SatDumpLauncher
 					CleanInstall();
 				}
 				DownloadUpdate();
-				Process.Start( "satdump-ui.exe" );
-				Application.Exit();
 			}
-
+			Process.Start( "satdump-ui.exe" );
+			Application.Exit();
 		}
 
 		private void DownloadUpdate()
@@ -84,6 +83,7 @@ namespace SatDumpLauncher
 					var msg = MessageBox.Show( "Something went wrong while installing the update: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
 					if ( msg == DialogResult.OK ) Application.Exit();
 				}
+				File.Delete( "SatDump.zip" );
 			}
 		}
 
