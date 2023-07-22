@@ -11,6 +11,13 @@ namespace SatDumpLauncher
 		{
 			InitializeComponent();
 			StatLabel.Text = "";
+
+			ToolTip tooltip = new();
+			tooltip.SetToolTip( UpdateCheck, "Automatically download and install the latest SatDump version." );
+			tooltip.SetToolTip( NightlyCheck, "Download latest nightly build instead of latest release build." );
+			tooltip.SetToolTip( CleanCheck, "Delete everything from the SatDump folder before installing the new version." );
+			tooltip.SetToolTip( PathButton, "Browse for path containing the SatDump installation." );
+
 			if ( Properties.Settings.Default.AppPath != string.Empty )
 			{
 				Environment.CurrentDirectory = Properties.Settings.Default.AppPath;
