@@ -130,6 +130,7 @@
 			Controls.Add( LaunchButton );
 			Icon = ( Icon )  resources.GetObject( "$this.Icon" ) ;
 			Name = "MainForm";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "SatDump Launcher";
 			ResumeLayout( false );
 			PerformLayout();
