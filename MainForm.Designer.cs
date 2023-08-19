@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( MainForm ) );
 			LaunchButton = new Button();
 			NightlyCheck = new CheckBox();
 			StatLabel = new Label();
@@ -128,8 +127,8 @@
 			Controls.Add( StatLabel );
 			Controls.Add( NightlyCheck );
 			Controls.Add( LaunchButton );
-			Icon = ( Icon )  resources.GetObject( "$this.Icon" ) ;
 			Name = "MainForm";
+			ShowIcon = false;
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "SatDump Launcher";
 			ResumeLayout( false );
