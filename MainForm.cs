@@ -48,21 +48,11 @@ namespace SatDumpLauncher
 				string url = "";
 				if ( NightlyCheck.Checked )
 				{
-					url = "https://github.com/SatDump/SatDump/releases/download/nightly/SatDump-Windows_x64_MSVC.zip";
+					url = "https://github.com/SatDump/SatDump/releases/download/nightly/SatDump-Windows_x64_Portable.zip";
 				}
 				else
 				{
-					try
-					{
-						string json = client.DownloadString( "https://api.github.com/repos/SatDump/SatDump/tags" );
-						dynamic versions = JsonConvert.DeserializeObject( json );
-						url = $"https://github.com/SatDump/SatDump/releases/latest/download/SatDump_Windows_x64_{versions[1].name}.zip";
-					}
-					catch ( Exception e )
-					{
-						var msg = MessageBox.Show( "Something went wrong while downloading SatDump version info: " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error );
-						if ( msg == DialogResult.OK ) Application.Exit();
-					}
+					url = "https://github.com/SatDump/SatDump/releases/latest/download/SatDump-Windows_x64_Portable.zip";
 				}
 
 				try
