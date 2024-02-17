@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Net;
