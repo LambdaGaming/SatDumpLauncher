@@ -1,5 +1,5 @@
 # SatDumpLauncher
- Launcher for [SatDump](https://github.com/SatDump/SatDump) that provides automatic updates for both nightly builds and full releases. Runs on .NET 6. To use, download and extract the zip, launch the exe, browse for your SatDump installation path, configure the settings, and press launch. It's recommended that you keep the launcher separate from your SatDump installation.
+ Launcher for [SatDump](https://github.com/SatDump/SatDump) that provides automatic updates for both nightly builds and full releases. Runs on .NET 8. To use, download and extract the zip, launch the exe, browse for your SatDump installation path, configure the settings, and press launch. It's recommended that you keep the launcher separate from your SatDump installation.
  
  ![](image.png)
 
